@@ -1,18 +1,23 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-_(Introduzir as entidade-tipo e associações do sistema, adicionalmente apresentar o diagrama do modelo Entidade-Associação.)_
 
 Entidades Tipo:
 
 - HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
-- HOSPEDE(nome, [nTelefone], nCC, email, tipoEstadia)
+Um hotel normalmente possui um nome, um local onde está localizado, o número de estrelas que determina a qualidade do hotel, um contacto e uma lotação máxima de hóspedes tendo em conta o tamanho do mesmo.
+
+- HOSPEDE(nome, [nTelefone], nCC, email)
 - QUARTO([nQuarto], tipoQuarto, preço)
+- FUNCIONARIO([nFuncionario], nome, nCC, ocupação, tipoContrato, efetividade)
+- RESERVA([nReserva], nQuarto, tipoEstadia, preço)
 
 Associações:
 
-- RESERVA(HOSPEDE, QUARTO) 1:N
-- dependeDe(QUARTO, HOSPEDE)
+- RESERVA(HOSPEDE, QUARTO) 1:N total/parcial 
+- trabalhaPara(FUNCIONARIO, HOTEL) 1:1 parcial/total
+- DIRIGE(FUNCIONARIO, HOTEL) 1:1 parcial/total
+- FAZ(FUNCIONARIO, RESERVA) 1:N parcial/total
 
 Modelo Entidade-Associação:
 
