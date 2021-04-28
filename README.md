@@ -4,7 +4,7 @@ Repository to host the project developed for 'Sistemas de Informação e Bases d
 
 ## Short theme description
 
-Como tema de trabalho propormos realizar uma base de dados de um sistema de agendamento numa companhia de hotéis. Tendo em conta diferentes países, as suas cidades e os hotéis em que cada uma delas existe, atribuímos diferentes clientes a um respetivo quarto, cada um deles com os seus dados de identificação tal como nome, C.C., etc, e nestes podem optar por escolher diferentes tipos de estadia. Existem diferentes tipos de preços tendo em conta otipo de época (alta ou baixa).Estes hotéis vão ter vários tipos de quarto tal como quartos single, casal, familiar e suite, cada um com o seu respetivo valor
+Como tema de trabalho propormos realizar uma base de dados de um sistema de agendamento numa companhia de hotéis. Tendo em conta diferentes países, as suas cidades e os hotéis em que cada uma delas existe, atribuímos diferentes clientes a um respetivo quarto, cada um deles com os seus dados de identificação tal como nome, C.C., etc, e nestes podem optar por escolher diferentes tipos de estadia. Existem diferentes tipos de preços tendo em conta otipo de época (alta ou baixa).Estes hotéis vão ter vários tipos de quarto tal como quartos single, casal, familiar e suite, cada um com o seu respetivo valor.
 
 ## Repository organization
 
