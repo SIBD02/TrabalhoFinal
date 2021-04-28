@@ -8,9 +8,8 @@ Como tema de trabalho propormos realizar uma base de dados de um sistema de agen
 
 ## Repository organization
 
-_Please help reader navigate around describing how the repository is organized by providing links_
 * **Source code** is in the [src folder](src/).
-* Reports are in [doc folder](doc/).
+* Relatórios estão em [doc folder](doc/).
 
 ## Gallery
 
@@ -19,11 +18,7 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 
 ## Technologies
 
-_Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies._
-* Docker
-* NodeJS
 * MySQL
-* _Any other?_
 
 ### Frameworks and Libraries
 
