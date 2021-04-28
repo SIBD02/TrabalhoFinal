@@ -34,6 +34,6 @@ Relatórios realizados ao longo do trabalho:
 * [REBD](doc/rebd/rebd00.md)
 
 ## Team
-* Gonçalo Cortez [@ggcz](https://github.com/gctz)
+* Gonçalo Cortez [@gctz](https://github.com/gctz)
 * Catarina Chaves [@CatarinaChaves](https://github.com/CatarinaChaves)
 * Ricardo Morais [@rickricky94](https://github.com/rickricky94)
