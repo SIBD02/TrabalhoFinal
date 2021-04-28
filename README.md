@@ -26,7 +26,7 @@ _Did you use any aditional libraries? Describe them here._
 * Loopback 4
 
 ## Reports
-_Please add at least a hyperlink per Report. But you can add more, for example for the individual report chapters._
+Relatórios realzados ao longo do trabalho:
 
 ### REI
 * [REI](doc/rei/rei00.md)
