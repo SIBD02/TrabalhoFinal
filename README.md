@@ -1,10 +1,10 @@
-# My work assignment Title
+# Companhia de Hotéis
 
 Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94](https://github.com/rickricky94).
 
 ## Short theme description
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
+Como tema de trabalho propormos realizar uma base de dados de um sistema de agendamento numa companhia dehotéis.Tendo em conta diferentes países, as suas cidades e os hotéis em que cada uma delas existe, atribuímosdiferentes clientesa um respetivo quarto, cada um deles com os seus dados de identificação tal como nome, C.C., etc, e nestes podem optar por escolher diferentes tipos de estadia.Existem diferentes tipos de preços tendo em conta otipo de época (alta ou baixa).Estes hotéis vão ter vários tipos de quarto tal como quartos single, casal, familiar e suite, cada um com o seu respetivo valor.
 
 ## Repository organization
 
