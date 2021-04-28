@@ -26,7 +26,7 @@ _Did you use any aditional libraries? Describe them here._
 * Loopback 4
 
 ## Reports
-Relatórios realzados ao longo do trabalho:
+Relatórios realizados ao longo do trabalho:
 
 ### REI
 * [REI](doc/rei/rei00.md)
