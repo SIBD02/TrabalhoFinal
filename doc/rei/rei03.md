@@ -5,14 +5,14 @@ _(Introduzir as entidade-tipo e associações do sistema, adicionalmente apresen
 
 Entidades Tipo:
 
-HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
-HOSPEDE(nome, [nTelefone], nCC, email, tipoEstadia)
-QUARTO([nQuarto], tipoQuarto, preço)
+- HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
+- HOSPEDE(nome, [nTelefone], nCC, email, tipoEstadia)
+- QUARTO([nQuarto], tipoQuarto, preço)
 
 Associações:
 
-RESERVA(HOSPEDE, QUARTO) 1:N
-dependeDe(QUARTO, HOSPEDE)
+- RESERVA(HOSPEDE, QUARTO) 1:N
+- dependeDe(QUARTO, HOSPEDE)
 
 Modelo Entidade-Associação:
 
