@@ -3,6 +3,19 @@
 ## Modelo E/A
 _(Introduzir as entidade-tipo e associações do sistema, adicionalmente apresentar o diagrama do modelo Entidade-Associação.)_
 
+Entidades Tipo:
+
+HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
+HOSPEDE(nome, [nTelefone], nCC, email, tipoEstadia)
+QUARTO([nQuarto], tipoQuarto, preço)
+
+Associações:
+
+RESERVA(HOSPEDE, QUARTO) 1:N
+dependeDe(QUARTO, HOSPEDE)
+
+Modelo Entidade-Associação:
+
 Exemplo de inserção de uma imagem:   
 ![An alternative description](images/image02.png)   
 
