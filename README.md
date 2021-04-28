@@ -1,6 +1,6 @@
 # My work assignment Title
 
-Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94] (https://github.com/rickricky94).
+Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94](https://github.com/rickricky94).
 
 ## Short theme description
 
