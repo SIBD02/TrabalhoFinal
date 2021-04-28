@@ -4,7 +4,7 @@
 
 ### Entidades Tipo:
 
-- HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
+- HOTEL(<ins>nome</ins>, localização, nEstrelas, contacto, lotacaoHospedes)
 
 Um hotel normalmente possui um nome, um local onde está localizado, o número de estrelas que determina a qualidade do hotel, um contacto e uma lotação máxima de hóspedes tendo em conta o tamanho do mesmo.
 
