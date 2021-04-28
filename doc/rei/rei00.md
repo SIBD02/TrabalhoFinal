@@ -6,13 +6,11 @@
 [Especificação de Requisitos](rei02.md)  
 [Esquema Conceptual](rei03.md)  
 
-## Group _xx_
+## Group SIBD02
 
-_Don't forget to add the group elements_
-
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
-
+* Gonçalo Cortez [@ggcz](https://github.com/gctz)
+* Catarina Chaves [@CatarinaChaves](https://github.com/CatarinaChaves)
+* Ricardo Morais [@rickricky94](https://github.com/rickricky94)
 
 
 ---
