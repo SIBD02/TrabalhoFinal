@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-# Entidades Tipo:
+### Entidades Tipo:
 
 - HOTEL([nome], localização, nEstrelas, contacto, lotacaoHospedes)
 
@@ -24,7 +24,7 @@ Um funcionário de hotel possui um nome, um número de identificação (cartão 
 
 Uma reserva num hotél implica reservar um quarto e escolher o tipo de estadia que deseja, que vai dar a um determinado preço.
 
-# Associações:
+### Associações:
 
 - RESERVA(HOSPEDE, QUARTO) 1:N total/parcial
 
@@ -42,7 +42,7 @@ Um funcionário cuja a sua ocupação seja gestor dirige o hotel a que está ass
 
 Um funcionário insere no sistema a reserva que o hóspede necessita.
 
-# Modelo Entidade-Associação:
+### Modelo Entidade-Associação:
 
 Exemplo de inserção de uma imagem:   
 ![An alternative description](images/image02.png)   
