@@ -9,16 +9,38 @@ Entidades Tipo:
 Um hotel normalmente possui um nome, um local onde está localizado, o número de estrelas que determina a qualidade do hotel, um contacto e uma lotação máxima de hóspedes tendo em conta o tamanho do mesmo.
 
 - HOSPEDE(nome, [nTelefone], nCC, email)
+
+Um hóspede possui sempre um nome, várias maneiras de contactá-lo como um número de telefone e e-mail e também possui um documento que o identifica tal como o cartão do cidadão.
+
 - QUARTO([nQuarto], tipoQuarto, preço)
+
+Um quarto de hotel dispõe de um preço, de um tipo de quarto, ou seja, se é single, casal, familiar ou suite, um preço dependendo do tipo e um número associado a ele.
+
 - FUNCIONARIO([nFuncionario], nome, nCC, ocupação, tipoContrato, efetividade)
+
+Um funcionário de hotel possui um nome, um número de identificação (cartão do cidadão), uma ocupação, ou seja, se é chefe, cozinheiro, limpezas, etc. O funcionário também tem um tipo de contrato (efetivo ou temporário) e uma efetividade.
+
 - RESERVA([nReserva], nQuarto, tipoEstadia, preço)
+
+Uma reserva num hotél implica reservar um quarto e escolher o tipo de estadia que deseja, que vai dar a um determinado preço.
 
 Associações:
 
-- RESERVA(HOSPEDE, QUARTO) 1:N total/parcial 
+- RESERVA(HOSPEDE, QUARTO) 1:N total/parcial
+
+Um hóspede pode reservar um quarto antes de chegar ao hotel.
+
 - trabalhaPara(FUNCIONARIO, HOTEL) 1:1 parcial/total
+
+Um funcionário trabalha para um hotel. 
+
 - DIRIGE(FUNCIONARIO, HOTEL) 1:1 parcial/total
+
+Um funcionário cuja a sua ocupação seja gestor dirige o hotel a que está associado.
+
 - FAZ(FUNCIONARIO, RESERVA) 1:N parcial/total
+
+Um funcionário insere no sistema a reserva que o hóspede necessita.
 
 Modelo Entidade-Associação:
 
