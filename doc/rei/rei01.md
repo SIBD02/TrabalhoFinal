@@ -9,11 +9,12 @@ Nesta base de dados, temos como objetivo estabelecer um certo nível de simplici
 
 ## Modelação do problema
 
+- Uma companhia de hotéis está presente em vários países. Cada país tem três hotéis,cada um com o seu respetivo nome, localização, número de estrelas e contacto;
 - Cada um desses hotéis está limitado a um certo número de hóspedes (lotação máxima);
 - Cada um dos hóspedes têm um nome, número de telefone, número de C.C., e-mail e está associado a um respetivo quarto;
 - Existem vários tipos de quarto tal como single, casal, familiar e suite, cada um com o seu valor diferente;
 - A estadia pode ser meia pensão, pensão completa e tudo incluído.
-_(Apresentar os pressupostos utilizados na modelação do problema, estes pressupostos poderão não estar na descrição do trabalho)_
+
 
 
 ---
