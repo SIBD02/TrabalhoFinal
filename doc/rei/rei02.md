@@ -1,6 +1,6 @@
 # C2 : Especificação de Requisitos
 
-As opções disponíveis no sistema da companhia de hotéis dependerão de o diferente nível de acesso que a pessoa têm. Vai existir um Escrítorio Geral que terá acesso a todos os dados disponibilizados pelos vários hotéis dos países. Dentro de cada país, existe um Gestor Nacional que terá acesso apenas aos dados relacionados com o seu país e dentro de cada respetivo hotel existe um ou vários Gestores de Hotel associados que terão total acesso aos dados do mesmo.
+As opções disponíveis no sistema da companhia de hotéis dependerão de o diferente nível de acesso que a pessoa têm. Vai existir um Escrítorio Geral que terá acesso a todos os dados disponibilizados pelos vários hotéis dos países. Dentro de cada país, existe um Gestor Nacional que terá acesso apenas aos dados relacionados com o seu país. Finalmente, dentro de cada respetivo hotel existe um ou vários Gestores de Hotel associados que terão total acesso aos dados do mesmo.
 
 Assim, o Escritório Geral poderá ter acesso às seguintes funcionalidades:
 
