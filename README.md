@@ -1,6 +1,6 @@
 # My work assignment Title
 
-Repository to host the project developed for 'some class', a fisrt year subject at SOMESCHOOL. Developed by Group ALPHA : [@MarcoOliveira](https://github.com/marcoamarooliveira), [add others].
+Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94] (https://github.com/rickricky94).
 
 ## Short theme description
 
