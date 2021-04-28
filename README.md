@@ -1,6 +1,6 @@
 # Companhia de Hoteis
 
-Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94](https://github.com/rickricky94).
+Repository to host the project developed for 'Sistemas de Informação e Bases de Dados', a second year subject at ISMAI. Developed by Group SIBD02: [@gctz](https://github.com/gctz), [@rickricky94](https://github.com/rickricky94), [@CatarinaChaves](https://github.com/CatarinaChaves).
 
 ## Short theme description
 
@@ -39,5 +39,6 @@ _Please add at least a hyperlink per Report. But you can add more, for example f
 * [REBD](doc/rebd/rebd00.md)
 
 ## Team
-* Marco Amaro Oliveira [@MarcoOliveira](https://github.com/marcoamarooliveira)
-* Other team members
+* Gonçalo Cortez [@ggcz](https://github.com/gctz)
+* Catarina Chaves [@CatarinaChaves](https://github.com/CatarinaChaves)
+* Ricardo Morais [@rickricky94](https://github.com/rickricky94)
