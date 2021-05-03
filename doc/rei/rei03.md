@@ -42,6 +42,10 @@ Um funcionário cuja a sua ocupação seja gestor dirige o hotel a que está ass
 
 Um funcionário insere no sistema a reserva que o hóspede necessita.
 
+- usufruirDeExtra(HOSPEDE, HOTEL) 1:N parcial/total
+
+Um hospéde pode usufruir de uma ou várias atividades extra como spa, bar, piscina, etc.
+
 ### Modelo Entidade-Associação:
 
 Exemplo de inserção de uma imagem:   
