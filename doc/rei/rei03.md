@@ -44,19 +44,29 @@ Um funcionário insere no sistema a reserva que o hóspede necessita.
 
 - usufruirDeExtra(HOSPEDE, HOTEL) 1:N parcial/total
 
-Um hospéde pode usufruir de uma ou várias atividades extra como spa, banho turco, piscina, etc.
+Um hóspede pode usufruir de uma ou várias atividades extra como spa, banho turco, piscina, etc.
 
 ### Modelo Entidade-Associação:
 
 Exemplo de inserção de uma imagem:   
 ![An alternative description](images/modelo_ea_hotel.png)   
 
-Always add a description to help the user understand the figure 
 
-NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
 
 ## Regras de negócio adicionais (Restrições)
-_(Apresentar uma lista detalhada das regras e restrições não possíveis de representar no modelo E/A, que visam a manutenção da consistência e integridade da modelação do problema)_
+
+- Cada funcionário está dirigido apenas a uma atividade.
+
+- Cada funcionário está ligado a um único andar.
+
+- Cada cliente só pode optar por um tipo de pensão por cada reserva.
+
+- Se o cliente pretender as refeições no quarto, tem que avisar a receção com 24h de antecedência.
+
+- O cliente só pode cancelar a reserva até 48h do dia da reserva.
+
+- O cliente não pode alterar a reserva no dia do check in.
+
 
 ---
 [< Previous](rei02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
