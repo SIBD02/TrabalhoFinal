@@ -18,5 +18,5 @@ O Gestor de Hotel poderá ter acesso às seguintes funcionalidades:
 - Toda a informação relacionada com funcionários.
 
 ---
-[< Previous](rei01.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei03.md)
+[< Previous](rei01.md) | [^ Main](https://github.com/SIBD02/TrabalhoFinal/) | [Next >](rei03.md)
 :--- | :---: | ---: 
