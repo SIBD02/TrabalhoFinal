@@ -30,5 +30,5 @@ Nesta base de dados, temos como objetivo estabelecer um certo nível de simplici
 
 
 ---
-[< Previous](rei00.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei02.md)
+[< Previous](rei00.md) | [^ Main](https://github.com/SIBD02/TrabalhoFinal/) | [Next >](rei02.md)
 :--- | :---: | ---: 
