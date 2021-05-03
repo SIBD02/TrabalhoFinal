@@ -44,7 +44,7 @@ Um funcionário insere no sistema a reserva que o hóspede necessita.
 
 - usufruirDeExtra(HOSPEDE, HOTEL) 1:N parcial/total
 
-Um hospéde pode usufruir de uma ou várias atividades extra como spa, bar, piscina, etc.
+Um hospéde pode usufruir de uma ou várias atividades extra como spa, banho turco, piscina, etc.
 
 ### Modelo Entidade-Associação:
 
