@@ -20,7 +20,7 @@ Um quarto de hotel dispõe de um preço, de um tipo de quarto, ou seja, se é si
 
 Um funcionário de hotel possui um nome, um número de identificação (cartão do cidadão), uma ocupação, ou seja, se é chefe, cozinheiro, limpezas, etc. O funcionário também tem um tipo de contrato (efetivo ou temporário) e uma efetividade.
 
-- RESERVA(<ins>nReserva</ins>, nQuarto, tipoEstadia, preço)
+- RESERVA(<ins>nReserva</ins>, nQuarto, tipoEstadia, tipoDiaDaSemana, preço)
 
 Uma reserva num hotél implica reservar um quarto e escolher o tipo de estadia que deseja, que vai dar a um determinado preço.
 
