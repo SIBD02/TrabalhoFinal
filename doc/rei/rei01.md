@@ -25,7 +25,7 @@ Nesta base de dados, temos como objetivo estabelecer um certo nível de simplici
 - Existem vários tipos de quarto tal como single, casal, familiar e suite, cada um com o seu valor diferente;
 - Cada hótel tem um número de funcionários;
 - Cada um desses funcionários têm um número de funcionário, nome, número de C.C., ocupação, tipo de contrato e efetividade;
-- A estadia pode ser meia pensão, pensão completa e tudo incluído.
+- A estadia pode ser: SA, APA, MP, PC, TI e HM.
 
 
 
