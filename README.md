@@ -19,6 +19,8 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 ## Technologies
 
 * MySQL
+* Wampserver
+* Node.js
 
 ### Frameworks and Libraries
 
