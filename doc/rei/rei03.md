@@ -69,5 +69,5 @@ Um hóspede pode usufruir de uma ou várias atividades extra como spa, banho tur
 
 
 ---
-[< Previous](rei02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
+[< Previous](rei02.md) | [^ Main](https://github.com/SIBD02/TrabalhoFinal/) | Next >
 :--- | :---: | ---: 
