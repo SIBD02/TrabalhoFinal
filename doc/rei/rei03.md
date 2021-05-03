@@ -48,7 +48,7 @@ Um hóspede pode usufruir de uma ou várias atividades extra como spa, banho tur
 
 ### Modelo Entidade-Associação:
 
-Exemplo de inserção de uma imagem:   
+  
 ![An alternative description](images/modelo_ea_hotel.png)   
 
 
