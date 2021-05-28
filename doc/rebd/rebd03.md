@@ -20,8 +20,8 @@
 
 ### Funcionario (<ins>nFuncionario</ins>, nome, nCC, ocupação, tipoContrato, efetividade)
 
-(DF1) nFuncionario -> nome, nCC
-(DF2) ocupação -> tipoContrato, efetividade
+- (DF1) nFuncionario -> nome, nCC
+- (DF2) ocupação -> tipoContrato, efetividade
 
 #### 1NF
 
@@ -47,7 +47,7 @@ Já se encontra normalizado em 3NF e BCNF.
 
 ### Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
 
-(DF1) nQuarto -> tipoQuarto, preço
+- (DF1) nQuarto -> tipoQuarto, preço
 
 #### 1NF
 
