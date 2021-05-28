@@ -70,7 +70,7 @@ Chaves Candidatas: (nTelefone)
 
 Já se encontra normalizado em 3NF e BCNF.
 
-### Assim, todas as relações encontram-se normalizadas e portanto no final ficam:
+### Assim, todas as relações encontram-se normalizadas e no final ficam:
 
 - Hotel (<ins>nome</ins>, localização, nEstrelas, lotacaoHospedes, <ins>#nFuncionario</ins> -> funcionario, <ins>#nTelefone</ins> -> hospede)
 
