@@ -72,24 +72,25 @@ Já se encontra normalizado em 3NF e BCNF.
 
 ### Assim, todas as relações encontram-se normalizadas e portanto no final ficam:
 
-- Hotel (nome, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
-Contacto_Hotel (#nome -> hotel, contacto)
+- Hotel (<ins>nome</ins>, localização, nEstrelas, lotacaoHospedes, <ins>#nFuncionario</ins> -> funcionario, <ins>#nTelefone</ins> -> hospede)
 
-- Funcionario (#nFuncionario -> Dados_Funcionario, #ocupação -> Contrato_Funcionario)
+- Contacto_Hotel (<ins>#nome</ins> -> hotel, contacto)
 
-- Dados_Funcionario (nFuncionario, nome, nCC)
+- Funcionario (<ins>#nFuncionario</ins> -> Dados_Funcionario, <ins>#ocupação</ins> -> Contrato_Funcionario)
 
-- Contrato_Funcionario (ocupação, tipoContrato, efetividade)
+- Dados_Funcionario (<ins>nFuncionario</ins>, nome, nCC)
 
-- Reserva (nReserva, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
+- Contrato_Funcionario (<ins>ocupação</ins>, tipoContrato, efetividade)
 
-- Reserva_Quarto (#nReserva -> reserva, nQuarto)
+- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, <ins>#nFuncionario</ins> -> funcionario)
 
-- Hospede (nTelefone, nome, email, nCC)
+- Reserva_Quarto (<ins>#nReserva</ins> -> reserva, nQuarto)
 
-- Quarto(#nQuarto -> Dados_Quarto, #nTelefone -> hospede)
+- Hospede (<ins>nTelefone</ins>, nome, email, nCC)
 
-- Dados_Quarto (nQuarto, tipoQuarto, preço)
+- Quarto(<ins>#nQuart</ins>o -> Dados_Quarto, <ins>#nTelefone</ins> -> hospede)
+
+- Dados_Quarto (<ins>nQuarto</ins>, tipoQuarto, preço)
 
 
 ---
