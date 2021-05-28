@@ -51,13 +51,13 @@ Já se encontra normalizado em 3NF e BCNF.
 
 #### 1NF
 
-Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, #nTelefone</ins> -> hospede)
+Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, <ins>#nTelefone</ins> -> hospede)
 
 Chaves candidatas: (nQuarto, nTelefone)
 
 #### 2NF
 
-Quarto(<ins>#nQuarto</ins> -> Dados_Quarto, #nTelefone</ins> -> hospede)
+Quarto(<ins>#nQuarto</ins> -> Dados_Quarto, <ins>#nTelefone</ins> -> hospede)
 
 Chaves Candidatas: (nQuarto, nTelefone)
 
