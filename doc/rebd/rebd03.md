@@ -2,10 +2,84 @@
 
 ## Relações
 
+- Hotel (<ins>nome</ins>, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
+Contacto_Hotel (#nome -> hotel, contacto)
+
+- Funcionario (<ins>nFuncionario</ins>, nome, nCC, ocupação, tipoContrato, efetividade)
+
+- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
+
+- Reserva_Quarto (<ins>#nReserva</ins> -> reserva, nQuarto)
+
+- Hospede (<ins>nTelefone</ins>, nome, email, nCC)
+
+- Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, #nTelefone -> hospede)
+
+## Normalização do Esquema Relacional
+
+### Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
+
+(DF1) nFuncionario -> nome, nCC
+(DF2) ocupação -> tipoContrato, efetividade
+
+1NF
+
+Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
+
+Chaves candidatas: (nFuncionario, ocupação)
+
+2NF
+
+Funcionario (#nFuncionario -> Dados_Funcionario, #ocupação -> Contrato_Funcionario)
+
+Chaves candidatas: (nFuncionario, ocupação)
+
+Dados_Funcionario (nFuncionario, nome, nCC)
+
+Chaves candidatas: (nFuncionario)
+
+Contrato_Funcionario (ocupação, tipoContrato, efetividade)
+
+Chaves candidatas: (ocupação)
+
+Já se encontra normalizado em 3NF e BCNF.
+
+### Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
+
+(DF1) nQuarto -> tipoQuarto, preço
+
+1NF
+
+Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
+
+Chaves candidatas: (nQuarto, nTelefone)
+
+2NF
+
+Quarto(#nQuarto -> Dados_Quarto, #nTelefone -> hospede)
+
+Chaves Candidatas: (nQuarto, nTelefone)
+
+Dados_Quarto (nQuarto, tipoQuarto, preço)
+
+Chaves Candidatas: (nQuarto)
+
+Hospede (nTelefone, nome, email, nCC)
+
+Chaves Candidatas: (nTelefone)
+
+Já se encontra normalizado em 3NF e BCNF.
+
+### Assim, todas as relações encontram-se normalizadas e portanto no final ficam:
+
 - Hotel (nome, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
 Contacto_Hotel (#nome -> hotel, contacto)
 
-- Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
+- Funcionario (#nFuncionario -> Dados_Funcionario, #ocupação -> Contrato_Funcionario)
+
+- Dados_Funcionario (nFuncionario, nome, nCC)
+
+- Contrato_Funcionario (ocupação, tipoContrato, efetividade)
 
 - Reserva (nReserva, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
 
@@ -13,11 +87,10 @@ Contacto_Hotel (#nome -> hotel, contacto)
 
 - Hospede (nTelefone, nome, email, nCC)
 
-- Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
+- Quarto(#nQuarto -> Dados_Quarto, #nTelefone -> hospede)
 
+- Dados_Quarto (nQuarto, tipoQuarto, preço)
 
-## Normalização do Esquema Relacional
-_(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
 
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd04.md)
