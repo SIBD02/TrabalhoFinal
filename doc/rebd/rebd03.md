@@ -17,28 +17,28 @@ Contacto_Hotel (#nome -> hotel, contacto)
 
 ## Normalização do Esquema Relacional
 
-### Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
+### Funcionario (<ins>nFuncionario</ins>, nome, nCC, ocupação, tipoContrato, efetividade)
 
 (DF1) nFuncionario -> nome, nCC
 (DF2) ocupação -> tipoContrato, efetividade
 
-1NF
+#### 1NF
 
-Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
-
-Chaves candidatas: (nFuncionario, ocupação)
-
-2NF
-
-Funcionario (#nFuncionario -> Dados_Funcionario, #ocupação -> Contrato_Funcionario)
+Funcionario (<ins>nFuncionario</ins>, nome, nCC, <ins>ocupação</ins>, tipoContrato, efetividade)
 
 Chaves candidatas: (nFuncionario, ocupação)
 
-Dados_Funcionario (nFuncionario, nome, nCC)
+#### 2NF
+
+Funcionario (<ins>#nFuncionario</ins> -> Dados_Funcionario, <ins>#ocupação</ins> -> Contrato_Funcionario)
+
+Chaves candidatas: (nFuncionario, ocupação)
+
+Dados_Funcionario (<ins>nFuncionario</ins>, nome, nCC)
 
 Chaves candidatas: (nFuncionario)
 
-Contrato_Funcionario (ocupação, tipoContrato, efetividade)
+Contrato_Funcionario (<ins>ocupação</ins>, tipoContrato, efetividade)
 
 Chaves candidatas: (ocupação)
 
@@ -48,23 +48,23 @@ Já se encontra normalizado em 3NF e BCNF.
 
 (DF1) nQuarto -> tipoQuarto, preço
 
-1NF
+#### 1NF
 
-Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
+Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, #nTelefone</ins> -> hospede)
 
 Chaves candidatas: (nQuarto, nTelefone)
 
-2NF
+#### 2NF
 
-Quarto(#nQuarto -> Dados_Quarto, #nTelefone -> hospede)
+Quarto(<ins>#nQuarto</ins> -> Dados_Quarto, #nTelefone</ins> -> hospede)
 
 Chaves Candidatas: (nQuarto, nTelefone)
 
-Dados_Quarto (nQuarto, tipoQuarto, preço)
+Dados_Quarto (<ins>nQuarto</ins>, tipoQuarto, preço)
 
 Chaves Candidatas: (nQuarto)
 
-Hospede (nTelefone, nome, email, nCC)
+Hospede (<ins>nTelefone</ins>, nome, email, nCC)
 
 Chaves Candidatas: (nTelefone)
 
