@@ -2,18 +2,18 @@
 
 ## Relações
 
-Hotel (nome, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
+- Hotel (nome, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
 Contacto_Hotel (#nome -> hotel, contacto)
 
-Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
+- Funcionario (nFuncionario, nome, nCC, ocupação, tipoContrato, efetividade)
 
-Reserva (nReserva, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
+- Reserva (nReserva, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
 
-Reserva_Quarto (#nReserva -> reserva, nQuarto)
+- Reserva_Quarto (#nReserva -> reserva, nQuarto)
 
-Hospede (nTelefone, nome, email, nCC)
+- Hospede (nTelefone, nome, email, nCC)
 
-Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
+- Quarto (nQuarto, tipoQuarto, preço, #nTelefone -> hospede)
 
 
 ## Normalização do Esquema Relacional
