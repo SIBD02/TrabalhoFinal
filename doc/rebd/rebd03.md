@@ -2,18 +2,19 @@
 
 ## Relações
 
-- Hotel (<ins>nome</ins>, localização, nEstrelas, lotacaoHospedes, #nFuncionario -> funcionario, #nTelefone -> hospede)
-Contacto_Hotel (#nome -> hotel, contacto)
+- Hotel (<ins>nome</ins>, localização, nEstrelas, lotacaoHospedes, <ins>#nFuncionario</ins> -> funcionario, <ins>#nTelefone</ins> -> hospede)
+
+- Contacto_Hotel (<ins>#nome</ins> -> hotel, contacto)
 
 - Funcionario (<ins>nFuncionario</ins>, nome, nCC, ocupação, tipoContrato, efetividade)
 
-- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, #nFuncionario -> funcionario)
+- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, <ins>#nFuncionario</ins> -> funcionario)
 
 - Reserva_Quarto (<ins>#nReserva</ins> -> reserva, nQuarto)
 
 - Hospede (<ins>nTelefone</ins>, nome, email, nCC)
 
-- Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, #nTelefone -> hospede)
+- Quarto (<ins>nQuarto</ins>, tipoQuarto, preço, <ins>#nTelefone</ins> -> hospede)
 
 ## Normalização do Esquema Relacional
 
