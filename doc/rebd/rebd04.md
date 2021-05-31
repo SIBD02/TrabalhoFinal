@@ -267,7 +267,8 @@ Tabela que inclui a informação detalhada de um respetivo quarto.
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | nQuarto       | Número do quarto. | INT    | -    | Não       | Não  |
-| nTelefone   | Número de telefone do hospede associado ao quarto. | INT(9)    | -    | Não        | Não  |
+| tipoQuarto   | Tipo do quarto. | VARCHAR(255)    | -    | Não        | Não  |
+| preço   | Preço do quarto. | DECIMAL    | -    | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -276,7 +277,6 @@ Tabela que inclui a informação detalhada de um respetivo quarto.
 | Coluna(s) |
 | --------- |
 | nQuarto   |
-| nTelefone   |
 
 ## Vistas
 
