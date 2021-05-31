@@ -118,7 +118,7 @@ INSERT into reserva VALUES (50, 'Meia pensão', 'Semana', 59,99€, 556677);
 UPDATE reserva SET preço = 99,99€ WHERE tipoEstadia = 'Meia pensão');
 UPDATE reserva SET tipoDiaDaSemana = 'Fim de Semana' WHERE preço >= 150,99€ AND tipoEstadia = 'Tudo incluído')
 ```
-Este INSERT insere os valores relativos a uma reserva. De seguida, realizados um commando caso queiramos colocar o preço a um certo valor para uma respetiva estadia. Adicionalmente, quando o preço for maior que 150€ e a estadia do tipo 'Tudo incluído', o dia da semana passa a ser 'Fim de Semana'.
+Este INSERT insere os valores relativos a uma reserva. De seguida, realizados um comando caso queiramos colocar o preço a um certo valor para uma respetiva estadia. Adicionalmente, quando o preço for maior que 150€ e a estadia do tipo 'Tudo incluído', o dia da semana passa a ser 'Fim de Semana'.
 
 _(Apresentar exemplos dos pedidos SQL à base de dados que demonstrem o cumprimento dos requisitos identificados. Para cada query apresentar numa breve descrição do requisito que pretende resolver e do resultado espectável.)_
 
