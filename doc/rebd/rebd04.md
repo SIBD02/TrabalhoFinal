@@ -2,27 +2,36 @@
 _(Apresentar o esquema físico da Base de Dados. Para cada relação resultante, apresente a descrição da tabela correspondente usando o exemplo apresentado.)_
 
 - [Relações](#relações)
-  - [Tabela_a](#tabela_a)
-  - [Tabela_b](#tabela_b)
+  - [Hotel](#hotel)
+  - [Contacto_Hotel](#contacto_hotel)
+  - [Funcionario](#funcionario)
+  - [Dados_Funcionario](#dados_funcionario)
+  - [Contrato_Funcionario](#contrato_funcionario)
+  - [Reserva](#reserva)
+  - [Reserva_Quarto](#reserva_quarto)
+  - [Hospede](#hospede)
+  - [Quarto](#quarto)
+  - [Dados_Quarto](#dados_quarto)
 - [Vistas](#vistas)
 
 ## Relações
 
-### Tabela_a
+### Hotel
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição da Tabela A
+Tabela sobre um hotel e todos os seus atributos.
 
 #### COLUNAS <!-- omit in toc -->
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
+| nome       | Nome do hotel. | VARCHAR(50) | -           | Não    | Não         |
+| localização     | Local onde o hotel se situa.  | VARCHAR(50)    | -        | Não        | Não  |
+| nEstrelas     | As estrelas que o hotel possui. | INT | -        | Não        | Não  |
+| lotacaoHospede | Lotação máxima de hóspedes. | INT        | -    | Não        | Não  |
+| nFuncionario     | Número de funcionários associados ao hotel. | INT      | -        | Sim        | Não  |
+| nTelefone    | Contacto telefónico. | INT(9)      | -        | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -30,49 +39,27 @@ Descrição da Tabela A
 
 | Coluna(s) |
 | --------- |
-| id        |
+| Nome        |
 
-- **Unicidade** (valores únicos)*:
-
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
+| Funcionario | nFuncionario      | Funcionario           | nFuncionario      | Não     |
 
-- **Atributos** (check)*:
-
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
-
-- **Outros Indices***:
-
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
-
-  *Remover se não existir.
-
-### Tabela_b
+### Contacto_Hotel
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Descrição da Tabela B
+Tabela que inclui o contacto do respetivo hotel.
 
 #### COLUNAS <!-- omit in toc -->
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| id       | identificador da tabela A | BIGINT      | -           | Sim        | Não  |
-| data     | Data do registo           | DATE        | now()       | Não        | Não  |
-| nome     | Nome do registo           | VARCHAR(50) | -           | Não        | Não  |
-| conteudo | Conteudo do documento     | TEXT        | -           | Não        | Sim  |
-| tipo     | tipo de testes            | BIGINT      | -           | Não        | Sim  |
+| nome       | Nome do hotel | VARCHAR(50)    | -    | Não       | Não  |
+| contacto   | Contacto do hotel  | INT(9)    | -    | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -80,33 +67,13 @@ Descrição da Tabela B
 
 | Coluna(s) |
 | --------- |
-| id        |
-
-- **Unicidade** (valores únicos)*:
-
-| Nome        | Coluna(s) | Indexar |
-| ----------- | --------- | ------- |
-| nome_unique | nome      | Sim     |
+| nome      |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
-| ta_fk | tipo      | Tabela_c            | id                        | Não     |
-
-- **Atributos** (check)*:
-
-| Nome | Coluna(s) | condição |
-| ---- | --------- | -------- |
-|      |           |          |
-
-- **Outros Indices***:
-
-| Nome | Coluna(s) |
-| ---- | --------- |
-|      |           |
-
-  *Remover se não existir.
+| contacto | nome      | hotel            | nome                        | Não     |
 
 ## Vistas
 
