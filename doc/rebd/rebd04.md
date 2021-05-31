@@ -261,7 +261,7 @@ Tabela que inclui a informação do quarto.
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Tabela que inclui a informação da reserva.
+Tabela que inclui a informação detalhada de um respetivo quarto.
 #### COLUNAS <!-- omit in toc -->
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
