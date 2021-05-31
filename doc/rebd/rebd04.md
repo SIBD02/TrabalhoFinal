@@ -126,6 +126,59 @@ Tabela que inclui a informação do funcionário detalhada.
 | --------- |
 | nFuncionario      |
 
+### Contrato_Funcionario
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação do contrato que o funcionário tem.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| ocupação | A ocupação (cargo) do funcionário. | VARCHAR(50)   | -    | Sim       | Não  |
+| tipoContrato   | Que tipo de contrato é.  | VARCHAR(50)    | -    | Não        | Não  |
+| efetividade  | Que tipo de efetividade é.  | BOOLEAN    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| ocupação  |
+
+### Reserva
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação da reserva.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nReserva       | Número da reserva. | INT    | -    | Sim       | Não  |
+| tipoEstadia   | Que tipo de estadia é.  | VARCHAR(50)    | -    | Não        | Não  |
+| tipoDiaDaSemana   | Se é semana ou fim de semana.  | BOOLEAN   | -    | Não        | Não  |
+| preço   | O preço.  | DECIMAL    | -    | Não        | Não  |
+| nFuncionario   | Funcionário associado com a reserva.  | INT    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nReserva     |
+| nFuncionario      |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| Funcionario Reserva | nFuncionario      | Funcionario          | nFuncionario       | Não     |
+
 ## Vistas
 
 _(Inserir a descrição e estrutura das vista, caso existam.)_
