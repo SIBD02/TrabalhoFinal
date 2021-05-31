@@ -75,6 +75,57 @@ Tabela que inclui o contacto do respetivo hotel.
 | ----- | --------- | ------------------- | ------------------------- | ------- |
 | contacto | nome      | hotel            | nome                        | Não     |
 
+### Funcionario
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação do funcionário.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nFuncionario       | Número do funcionário. | INT    | -    | Sim       | Não  |
+| ocupação   | A ocupação (cargo) do funcionário.  | VARCHAR(50)    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nFuncionario      |
+| ocupação      |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| Dados Funcionario | nFuncionario      | Dados_Funcionario          | Funcionario       | Não     |
+| Ocupação | ocupação      | Contrato_Funcionario          | Funcionario       | Não     |
+
+### Dados_Funcionario
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação do funcionário detalhada.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nFuncionario | Número do funcionário. | INT    | -    | Sim       | Não  |
+| nome   | Nome do funcionário.  | VARCHAR(50)    | -    | Não        | Não  |
+| nCC  | Número do funcionário.  | INT(8)    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nFuncionario      |
+
 ## Vistas
 
 _(Inserir a descrição e estrutura das vista, caso existam.)_
