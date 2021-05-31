@@ -228,6 +228,55 @@ Tabela que inclui a informação da reserva em detalhe.
 | --------- |
 | nTelefone |
 
+### Quarto
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação do quarto.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nQuarto       | Número do quarto.| INT    | -    | Não       | Não  |
+| nTelefone   | Número de telefone do hospede associado ao quarto.  | INT(9)    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nQuarto     |
+| nTelefone     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| Número Quarto | nQuarto      | dados_quarto           | nQuarto     | Não     |
+| Número Telefone | nTelefone      | hospede           | nTelefone     | Não     |
+
+### Dados_Quarto
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação da reserva.
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nQuarto       | Número do quarto. | INT    | -    | Não       | Não  |
+| nTelefone   | Número de telefone do hospede associado ao quarto. | INT(9)    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nQuarto   |
+| nTelefone   |
 
 ## Vistas
 
