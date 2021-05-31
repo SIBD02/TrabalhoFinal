@@ -108,10 +108,17 @@ UPDATE dados_funcionarios SET nCC = 98765321 WHERE nome = 'Ricardo Morais'
 Este INSERT insere os respetivos dados para um novo funcionário denomeado Ricardo Morais. De seguida, após hipoteticamente ser descoberto um erro na inserção do número de cartão do cidadão, realiza-se um UPDATE para atualizar o número para o correto.
 
 ```sql
-INSERT into contracto_funcionario VALUES ('Gerente', 'Full time', 'Efetivo')
+INSERT into contracto_funcionario VALUES ('Gerente', 'Full time', 'Efetivo');
 DELETE FROM contracto_funcionario WHERE tipoDeContrato = 'Full Time' AND efetividade = 'Efetivo'
 ```
 Este INSERT insere na base de dados os valores do contrato de um funcionário. De seguida, realizamos um comando caso queiramos apagar todos os funcionários cujo contrato seja 'Full Time' e a sua efetividade 'Efetivo'.
+
+```sql
+INSERT into reserva VALUES (50, 'Meia pensão', 'Semana', 59,99€, 556677);
+UPDATE reserva SET preço = 99,99€ WHERE tipoEstadia = 'Meia pensão');
+UPDATE reserva SET tipoDiaDaSemana = 'Fim de Semana' WHERE preço >= 150,99€ AND tipoEstadia = 'Tudo incluído')
+```
+Este INSERT insere os valores relativos a uma reserva. De seguida, realizados um commando caso queiramos colocar o preço a um certo valor para uma respetiva estadia. Adicionalmente, quando o preço for maior que 150€ e a estadia do tipo 'Tudo incluído', o dia da semana passa a ser 'Fim de Semana'.
 
 _(Apresentar exemplos dos pedidos SQL à base de dados que demonstrem o cumprimento dos requisitos identificados. Para cada query apresentar numa breve descrição do requisito que pretende resolver e do resultado espectável.)_
 
