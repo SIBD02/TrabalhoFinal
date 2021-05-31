@@ -91,6 +91,28 @@ CREATE TABLE IF NOT EXISTS `dados_quarto` (
 
 ## DML
 
+```sql
+INSERT INTO hotel VALUES ('ARCHIPEGALOS Porto', 'Porto', 4, 200, 556677, 919999999) 
+```
+Este INSERT introduz os valores para um novo hotel na base de dados, incluindo o seu nome, localização, número de estrelas, lotação de hóspedes, número do funcionário associado com este hotel e o número de telefone dos hóspedes associados.
+
+```sql
+UPDATE contacto_hotel SET contacto = 916666666
+```
+Este update atualiza o contacto do hotel para um novo número.
+
+```sql
+INSERT INTO dados_funcionario VALUES (123456, 'Ricardo Morais', 98765432);
+UPDATE dados_funcionarios SET nCC = 98765321 WHERE nome = 'Ricardo Morais'
+```
+Este INSERT insere os respetivos dados para um novo funcionário denomeado Ricardo Morais. De seguida, após hipoteticamente ser descoberto um erro na inserção do número de cartão do cidadão, realiza-se um UPDATE para atualizar o número para o correto.
+
+```sql
+INSERT into contracto_funcionario VALUES ('Gerente', 'Full time', 'Efetivo')
+DELETE FROM contracto_funcionario WHERE tipoDeContrato = 'Full Time' AND efetividade = 'Efetivo'
+```
+Este INSERT insere na base de dados os valores do contrato de um funcionário. De seguida, realizamos um comando caso queiramos apagar todos os funcionários cujo contrato seja 'Full Time' e a sua efetividade 'Efetivo'.
+
 _(Apresentar exemplos dos pedidos SQL à base de dados que demonstrem o cumprimento dos requisitos identificados. Para cada query apresentar numa breve descrição do requisito que pretende resolver e do resultado espectável.)_
 
 ---
