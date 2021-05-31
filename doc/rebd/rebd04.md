@@ -152,7 +152,7 @@ Tabela que inclui a informação do contrato que o funcionário tem.
 
 #### DESCRIÇÃO <!-- omit in toc -->
 
-Tabela que inclui a informação da reserva.
+Tabela que inclui a informação da reserva em detalhe.
 
 #### COLUNAS <!-- omit in toc -->
 
@@ -178,6 +178,56 @@ Tabela que inclui a informação da reserva.
 | Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
 | Funcionario Reserva | nFuncionario      | Funcionario          | nFuncionario       | Não     |
+
+### Reserva_Quarto
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação da reserva.
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nReserva       | Número da reserva. | INT    | -    | Sim       | Não  |
+| nQuarto   | Número do quarto. | INT    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nReserva     |
+
+- **Referêncial** (chaves estrangeiras)*:
+
+| Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
+| ----- | --------- | ------------------- | ------------------------- | ------- |
+| Reserva Quarto | nReserva      | Reserva          | nReserva       | Não     |
+
+### Hospede
+
+#### DESCRIÇÃO <!-- omit in toc -->
+
+Tabela que inclui a informação da reserva em detalhe.
+
+#### COLUNAS <!-- omit in toc -->
+
+| Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
+| :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
+| nTelefone   | Número de telefone do hospede. | INT    | -    | Não      | Não  |
+| nome   | Nome do hospede.  | VARCHAR(50)    | -    | Não        | Não  |
+| email   | E-mail do hospede.  | NVARCHAR(255)   | -    | Não        | Não  |
+| nCC   | Número de cartão de cidadão do hospede..  | INT(8)    | -    | Não        | Não  |
+
+#### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
+
+- **Chave Primária**: 
+
+| Coluna(s) |
+| --------- |
+| nTelefone |
+
 
 ## Vistas
 
