@@ -136,7 +136,7 @@ Tabela que inclui a informação do contrato que o funcionário tem.
 
 | Nome     | Descrição                 | Domínio     | por Omissão | Automático | Nulo |
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
-| ocupação | A ocupação (cargo) do funcionário. | VARCHAR(50)   | -    | Sim       | Não  |
+| ocupação | A ocupação (cargo) do funcionário. | VARCHAR(50)   | -    | Não       | Não  |
 | tipoContrato   | Que tipo de contrato é.  | VARCHAR(50)    | -    | Não        | Não  |
 | efetividade  | Que tipo de efetividade é.  | BOOLEAN    | -    | Não        | Não  |
 
