@@ -1,5 +1,4 @@
 # C4 : Esquema Relacional  <!-- omit in toc -->
-_(Apresentar o esquema físico da Base de Dados. Para cada relação resultante, apresente a descrição da tabela correspondente usando o exemplo apresentado.)_
 
 - [Relações](#relações)
   - [Hotel](#hotel)
@@ -280,7 +279,20 @@ Tabela que inclui a informação detalhada de um respetivo quarto.
 
 ## Vistas
 
-_(Inserir a descrição e estrutura das vista, caso existam.)_
+```sql
+CREATE VIEW Funcionarios AS
+SELECT nFuncionario, nome
+FROM dados_funcionario
+```
+Vista que permite ver os funcionários.
+
+```sql
+CREATE VIEW ReservasMeiaPensao AS
+SELECT tipoEstadia, preço
+FROM reserva
+WHERE preço <= 50,99
+```
+Vista que permite ver as reservas apenas de meia de pensão.
 
 ---
 | [< Previous](rebd03.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd05.md) |
