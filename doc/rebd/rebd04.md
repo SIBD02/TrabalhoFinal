@@ -294,6 +294,15 @@ WHERE preço <= 50,99
 ```
 Vista que permite ver as reservas apenas de meia de pensão.
 
+```sql
+CREATE VIEW Gerente AS
+SELECT nFuncionario
+FROM hotel
+INNER JOIN (SELECT nFuncionario, ocupação FROM funcionario)
+WHERE ocupação = 'Gerente'
+```
+Vista que permite ver os funcionários cuja ocupação é 'Gerente'.
+
 ---
 | [< Previous](rebd03.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd05.md) |
 | :---------------------- | :------------------------------------------------------: | ------------------: |
