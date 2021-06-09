@@ -57,7 +57,10 @@ CREATE TABLE IF NOT EXISTS `reserva` (
 	`tipoEstadia` varchar(50) unsigned NOT NULL,
 	`tipoDiaDaSemana` boolean unsigned NOT NULL,
 	`preço` decimal unsigned NOT NULL,
+	`data` int unsigned NOT NULL,
 	`nFuncionario` int unsigned NOT NULL,
+        `nTelefone` int unsigned NOT NULL,
+	`nQuarto` int unsigned NOT NULL,
 	PRIMARY KEY (`nReserva`, `nFuncionario`)
 );
 
