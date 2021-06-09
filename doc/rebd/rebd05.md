@@ -100,7 +100,7 @@ INSERT INTO hotel VALUES ('ARCHIPEGALOS Porto', 'Porto', 4, 200, 556677, 9199999
 Este INSERT introduz os valores para um novo hotel na base de dados, incluindo o seu nome, localização, número de estrelas, lotação de hóspedes, número do funcionário associado com este hotel e o número de telefone dos hóspedes associados.
 
 ```sql
-UPDATE contacto_hotel SET contacto = 916666666
+UPDATE contacto_hotel SET contacto = 916666666 WHERE nome = 'ARCHIPEGALOS Porto'
 ```
 Este update atualiza o contacto do hotel para um novo número.
 
