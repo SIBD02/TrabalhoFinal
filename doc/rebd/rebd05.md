@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `reserva` (
 	`nFuncionario` int unsigned NOT NULL,
         `nTelefone` int unsigned NOT NULL,
 	`nQuarto` int unsigned NOT NULL,
-	PRIMARY KEY (`nReserva`, `nFuncionario`)
+	PRIMARY KEY (`nReserva`, `nFuncionario`, `nTelefone`, `nQuarto`)
 );
 
 CREATE TABLE IF NOT EXISTS `reserva_quarto` (
