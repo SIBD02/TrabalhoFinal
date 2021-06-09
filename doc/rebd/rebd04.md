@@ -161,7 +161,7 @@ Tabela que inclui a informação da reserva em detalhe.
 | tipoEstadia   | Que tipo de estadia é.  | VARCHAR(50)    | -    | Não        | Não  |
 | tipoDiaDaSemana   | Se é semana ou fim de semana.  | BOOLEAN   | -    | Não        | Não  |
 | preço   | O preço.  | DECIMAL    | -    | Não        | Não  |
-| data   | A data.  | INT    | -    | Não        | Não  |
+| data   | A data.  | VARCHAR(50)    | -    | Não        | Não  |
 | nFuncionario   | Funcionário associado com a reserva.  | INT    | -    | Não        | Não  |
 | nTelefone  | Hospede associado com a reserva.  | INT    | -    | Não        | Não  |
 | nQuarto   | Quarto associado com a reserva.  | INT    | -    | Não        | Não  |
