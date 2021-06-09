@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-![An alternative description](/doc/rei/images/modelo_ea_hotel.png)   
+![An alternative description](/doc/rei/images/modelo_ea_hotel_CORRIGIDO.png)   
 
 ## Regras de negócio adicionais (Restrições)
 
