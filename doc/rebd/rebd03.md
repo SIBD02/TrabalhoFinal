@@ -83,13 +83,13 @@ Já se encontra normalizado em 3NF e BCNF.
 
 - Contrato_Funcionario (<ins>ocupação</ins>, tipoContrato, efetividade)
 
-- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, <ins>#nFuncionario</ins> -> funcionario)
+- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, data, <ins>#nFuncionario</ins> -> funcionario, <ins>#nTelefone</ins> -> hospede, <ins>#nQuarto</ins> -> quarto)
 
 - Reserva_Quarto (<ins>#nReserva</ins> -> reserva, nQuarto)
 
 - Hospede (<ins>nTelefone</ins>, nome, email, nCC)
 
-- Quarto(<ins>#nQuart</ins>o -> Dados_Quarto, <ins>#nTelefone</ins> -> hospede)
+- Quarto(<ins>#nQuarto</ins> -> Dados_Quarto, <ins>#nTelefone</ins> -> hospede)
 
 - Dados_Quarto (<ins>nQuarto</ins>, tipoQuarto, preço)
 
