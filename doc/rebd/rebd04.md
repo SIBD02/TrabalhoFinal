@@ -161,7 +161,10 @@ Tabela que inclui a informação da reserva em detalhe.
 | tipoEstadia   | Que tipo de estadia é.  | VARCHAR(50)    | -    | Não        | Não  |
 | tipoDiaDaSemana   | Se é semana ou fim de semana.  | BOOLEAN   | -    | Não        | Não  |
 | preço   | O preço.  | DECIMAL    | -    | Não        | Não  |
+| data   | A data.  | INT    | -    | Não        | Não  |
 | nFuncionario   | Funcionário associado com a reserva.  | INT    | -    | Não        | Não  |
+| nTelefone  | Hospede associado com a reserva.  | INT    | -    | Não        | Não  |
+| nQuarto   | Quarto associado com a reserva.  | INT    | -    | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
@@ -169,14 +172,18 @@ Tabela que inclui a informação da reserva em detalhe.
 
 | Coluna(s) |
 | --------- |
-| nReserva     |
-| nFuncionario      |
+| nReserva |
+| nFuncionario |
+| nTelefone |
+| nQuarto |
 
 - **Referêncial** (chaves estrangeiras)*:
 
 | Nome  | Coluna(s) | Tabela referênciada | Coluna(s) referênciada(s) | Indexar |
 | ----- | --------- | ------------------- | ------------------------- | ------- |
 | Funcionario Reserva | nFuncionario      | Funcionario          | nFuncionario       | Não     |
+| Hospede Reserva | nTelefone      | Hospede          | nTelefone       | Não     |
+| Quarto Reserva | nQuarto      | Quarto          | nQuarto       | Não     |
 
 ### Reserva_Quarto
 
