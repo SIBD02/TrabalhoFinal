@@ -8,7 +8,7 @@
 
 - Funcionario (<ins>nFuncionario</ins>, nome, nCC, ocupação, tipoContrato, efetividade)
 
-- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, <ins>#nFuncionario</ins> -> funcionario)
+- Reserva (<ins>nReserva</ins>, tipoEstadia, tipoDiaDaSemana, preço, data, <ins>#nFuncionario</ins> -> funcionario, <ins>#nTelefone</ins> -> hospede, <ins>#nQuarto</ins> -> quarto)
 
 - Reserva_Quarto (<ins>#nReserva</ins> -> reserva, nQuarto)
 
