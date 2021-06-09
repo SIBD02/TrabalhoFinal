@@ -15,7 +15,6 @@ Os hóspedes, acompanhados com o seu nome, número de telefone, número de C.C. 
 
 O hóspede também pode reservar quartos.
 Cada hotel dispõe de um certo número de funcionários, cada um deles com o número de funcionário, nome, número de C.C., ocupação, tipo de contrato e efetividade.
-Nesta base de dados, temos como objetivo estabelecer um certo nível de simplicidade, não só para ser de fácil organização, como de manuseamento simples.
 
 
 ## Descrição dos requisitos do utilizador
