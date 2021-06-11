@@ -24,7 +24,6 @@ A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull 
 
 ### Frameworks and Libraries
 
-_Did you use any aditional libraries? Describe them here._
 * Loopback 4
 
 ## Reports
