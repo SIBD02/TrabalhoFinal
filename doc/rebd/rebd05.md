@@ -3,22 +3,11 @@
 ## DDL
 
 ```sql
-USE `test`;
-
-DROP TABLE IF EXISTS `hotel`;
-DROP TABLE IF EXISTS `contacto_hotel`;
-DROP TABLE IF EXISTS `funcionario`;
-DROP TABLE IF EXISTS `dados_funcionario`;
-DROP TABLE IF EXISTS `contrato_funcionario`;
-DROP TABLE IF EXISTS `reserva`;
-DROP TABLE IF EXISTS `reserva_quarto`;
-DROP TABLE IF EXISTS `hospede`;
-DROP TABLE IF EXISTS `quarto`;
-DROP TABLE IF EXISTS `dados_quarto`;
+USE `companhia_hoteis`;
 
 CREATE TABLE IF NOT EXISTS `hotel` (
-	`nome` varchar(50) unsigned NOT NULL,
-	`localização` varchar(50) unsigned NOT NULL,
+	`nome` varchar(50) NOT NULL,
+	`localização` varchar(50) NOT NULL,
 	`nEstrelas` int unsigned NOT NULL,
 	`lotacaoHospede` int unsigned NOT NULL,
 	`nFuncionario` int unsigned NOT NULL AUTO_INCREMENT,
@@ -27,39 +16,39 @@ CREATE TABLE IF NOT EXISTS `hotel` (
 );
 
 CREATE TABLE IF NOT EXISTS `contacto_hotel` (
-	`nome` varchar(50) unsigned NOT NULL,
+	`nome` varchar(50) NOT NULL,
 	`contacto` int(9) unsigned NOT NULL,
 	PRIMARY KEY (`nome`)
 );
 
 CREATE TABLE IF NOT EXISTS `funcionario` (
 	`nFuncionario` int unsigned NOT NULL AUTO_INCREMENT,
-	`ocupação` varchar(50) unsigned NOT NULL,
+	`ocupação` varchar(50) NOT NULL,
 	PRIMARY KEY (`nFuncionario`, `ocupação`)
 );
 
 CREATE TABLE IF NOT EXISTS `dados_funcionario` (
 	`nFuncionario` int unsigned NOT NULL AUTO_INCREMENT,
-	`nome` varchar(50) unsigned NOT NULL,
+	`nome` varchar(50) NOT NULL,
 	`nCC` int(8) unsigned NOT NULL,
 	PRIMARY KEY (`nFuncionario`)
 );
 
 CREATE TABLE IF NOT EXISTS `contrato_funcionario` (
-	`ocupação` varchar(50) unsigned NOT NULL,
-	`tipoContrato` varchar(50) unsigned NOT NULL,
-	`efetividade` boolean unsigned NOT NULL,
+	`ocupação` varchar(50) NOT NULL,
+	`tipoContrato` varchar(50) NOT NULL,
+	`efetividade` boolean NOT NULL,
 	PRIMARY KEY (`ocupação`)
 );
 
 CREATE TABLE IF NOT EXISTS `reserva` (
 	`nReserva` int unsigned NOT NULL AUTO_INCREMENT,
-	`tipoEstadia` varchar(50) unsigned NOT NULL,
-	`tipoDiaDaSemana` boolean unsigned NOT NULL,
+	`tipoEstadia` varchar(50) NOT NULL,
+	`tipoDiaDaSemana` boolean NOT NULL,
 	`preço` decimal unsigned NOT NULL,
-	`data` varchar(50) unsigned NOT NULL,
+	`data` varchar(50) NOT NULL,
 	`nFuncionario` int unsigned NOT NULL,
-        `nTelefone` int unsigned NOT NULL,
+	`nTelefone` int unsigned NOT NULL,
 	`nQuarto` int unsigned NOT NULL,
 	PRIMARY KEY (`nReserva`, `nFuncionario`, `nTelefone`, `nQuarto`)
 );
@@ -72,8 +61,8 @@ CREATE TABLE IF NOT EXISTS `reserva_quarto` (
 
 CREATE TABLE IF NOT EXISTS `hospede` (
 	`nTelefone` int unsigned NOT NULL,
-	`nome` varchar(50) unsigned NOT NULL,
-	`email` nvarchar(255) unsigned NOT NULL,
+	`nome` varchar(50) NOT NULL,
+	`email` nvarchar(255) NOT NULL,
 	`nCC` int unsigned NOT NULL,
 	PRIMARY KEY (`nTelefone`)
 );
@@ -86,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `quarto` (
 
 CREATE TABLE IF NOT EXISTS `dados_quarto` (
 	`nQuarto` int unsigned NOT NULL,
-	`tipoQuarto` varchar(255) unsigned NOT NULL,
+	`tipoQuarto` varchar(255) NOT NULL,
 	`preço` decimal unsigned NOT NULL,
 	PRIMARY KEY (`nQuarto`)
 );
