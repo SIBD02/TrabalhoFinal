@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS `hotel` (
 	`lotacaoHospede` int unsigned NOT NULL,
 	`nFuncionario` int unsigned NOT NULL AUTO_INCREMENT,
 	`nTelefone` int(9) unsigned NOT NULL,
-	PRIMARY KEY (`nome`)
+	PRIMARY KEY (`nome`, `nFuncionario`, `nTelefone`)
 );
 
 CREATE TABLE IF NOT EXISTS `contacto_hotel` (
