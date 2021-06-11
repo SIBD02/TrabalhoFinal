@@ -39,7 +39,8 @@ Tabela sobre um hotel e todos os seus atributos.
 | Coluna(s) |
 | --------- |
 | Nome        |
-
+| nFuncionario |
+| nTelefone |
 
 - **Referêncial** (chaves estrangeiras)*:
 
