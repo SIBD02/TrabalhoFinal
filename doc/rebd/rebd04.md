@@ -138,7 +138,7 @@ Tabela que inclui a informação do contrato que o funcionário tem.
 | :------- | :------------------------ | :---------- | :---------- | :--------- | :--- |
 | ocupação | A ocupação (cargo) do funcionário. | VARCHAR(50)   | -    | Não       | Não  |
 | tipoContrato   | Que tipo de contrato é.  | VARCHAR(50)    | -    | Não        | Não  |
-| efetividade  | Que tipo de efetividade é.  | BOOLEAN    | -    | Não        | Não  |
+| efetividade  | Que tipo de efetividade é.  | VARCHAR(50)    | -    | Não        | Não  |
 
 #### RESTRIÇÕES DE INTEGRIDADE <!-- omit in toc -->
 
