@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `reserva` (
 	`nReserva` int unsigned NOT NULL AUTO_INCREMENT,
 	`tipoEstadia` varchar(50) NOT NULL,
 	`tipoDiaDaSemana` varchar(50) NOT NULL,
-	`preço` decimal unsigned NOT NULL,
+	`preço` varchar(50) unsigned NOT NULL,
 	`data` varchar(50) NOT NULL,
 	`nFuncionario` int unsigned NOT NULL,
 	`nTelefone` int unsigned NOT NULL,
