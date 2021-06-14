@@ -33,6 +33,8 @@ Relatórios realizados ao longo do trabalho:
 * [REI](doc/rei/rei00.md)
 ### REBD 
 * [REBD](doc/rebd/rebd00.md)
+### PRODUTO
+* [SQL(doc/sql/)
 
 ## Team
 * Gonçalo Cortez [@gctz](https://github.com/gctz)
