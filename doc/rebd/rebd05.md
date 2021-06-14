@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `quarto` (
 CREATE TABLE IF NOT EXISTS `dados_quarto` (
 	`nQuarto` int unsigned NOT NULL,
 	`tipoQuarto` varchar(255) NOT NULL,
-	`preço` decimal unsigned NOT NULL,
+	`preço` varchar(50) unsigned NOT NULL,
 	PRIMARY KEY (`nQuarto`)
 );
 ```
