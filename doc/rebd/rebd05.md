@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `dados_funcionario` (
 CREATE TABLE IF NOT EXISTS `contrato_funcionario` (
 	`ocupação` varchar(50) NOT NULL,
 	`tipoContrato` varchar(50) NOT NULL,
-	`efetividade` int NOT NULL,
+	`efetividade` varchar(50) NOT NULL,
 	PRIMARY KEY (`ocupação`)
 );
 
